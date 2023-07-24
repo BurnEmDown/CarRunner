@@ -34,7 +34,7 @@ namespace Player
             UnsubscribeFromEvents();
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             playerInput.CheckInput();
         }
