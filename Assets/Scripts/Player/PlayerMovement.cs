@@ -4,11 +4,12 @@ namespace Player
 {
     public class PlayerMovement : MonoBehaviour
     {
+        [SerializeField] private Transform playerCarImage;
 
         internal void MoveToPosition(Transform newPosition)
         {
-            transform.SetParent(newPosition);
-            transform.localPosition = Vector3.zero;
+            playerCarImage.SetParent(newPosition);
+            playerCarImage.localPosition = Vector3.zero;
         }
     }
 }
