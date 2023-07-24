@@ -27,11 +27,11 @@ public class EnemyCar : MonoBehaviour
     {
         if (col.CompareTag("BottomCollider"))
         {
-            GameManager.Instance.PlayerPassedEnemyCar(this);
+            GameManager.PlayerPassedEnemyCar(this);
         }
         else if (col.CompareTag("Player"))
         {
-            GameManager.Instance.EnemyCarHitPlayer();
+            GameManager.EnemyCarHitPlayer();
         }
     }
 }

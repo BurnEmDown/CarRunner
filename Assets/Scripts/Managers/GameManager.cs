@@ -5,35 +5,19 @@ using UnityEngine.SceneManagement;
 
 namespace Managers
 {
-    public class GameManager : MonoBehaviour
+    public static class GameManager
     {
-        public static GameManager Instance;
-        protected MainManager Manager => MainManager.Instance;
+        private static TopStats topStats;
 
-        [SerializeField] private TopStats topStats;
+        private const int startLives = 3;
+        private const int startScore = 0;
+        private const int startCarsPassed = 0;
         
-        [SerializeField] private int lives;
-        [SerializeField] private int score;
-        [SerializeField] private int carsPassed;
+        private static int lives;
+        private static int score;
+        private static int carsPassed;
 
-        private void Awake()
-        {
-            if (Instance == null)
-            {
-                Instance = this;
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
-        }
-
-        private void Start()
-        {
-            Manager.poolManager.InitPool<EnemyCar>(nameof(EnemyCar),10);
-        }
-
-        public void EnemyCarHitPlayer()
+        public static void EnemyCarHitPlayer()
         {
             lives--;
             topStats.UpdateLivesNum(lives);
@@ -43,13 +27,20 @@ namespace Managers
             }
         }
 
-        public void PlayerPassedEnemyCar(EnemyCar car)
+        public static void PlayerPassedEnemyCar(EnemyCar car)
         {
             score += car.ScoreGiven;
             topStats.UpdateScoreNum(score);
             carsPassed++;
             topStats.UpdateCarsNum(carsPassed);
             MainManager.Instance.poolManager.ReturnToPool(nameof(EnemyCar),car);
+        }
+
+        public static void ResetDefaultValues()
+        {
+            lives = startLives;
+            score = startScore;
+            carsPassed = startCarsPassed;
         }
     }
 }

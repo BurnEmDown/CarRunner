@@ -22,7 +22,7 @@ namespace Managers
         
             factoryManager = new FactoryManager();
             poolManager = new PoolManager();
-            //poolManager = Object.FindObjectOfType<PoolManager>();
+            poolManager.InitPool<EnemyCar>(nameof(EnemyCar),10);
         }
     }
 }
