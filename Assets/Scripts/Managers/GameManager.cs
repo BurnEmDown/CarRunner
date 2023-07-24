@@ -1,4 +1,5 @@
 using System;
+using Loaders;
 using UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -23,7 +24,7 @@ namespace Managers
             topStats.UpdateLivesNum(lives);
             if (lives == 0)
             {
-                SceneManager.LoadScene(2); // summary scene
+                LoadManager.Instance.LoadSummaryScene();
             }
         }
 

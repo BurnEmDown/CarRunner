@@ -4,9 +4,9 @@ using UnityEngine.SceneManagement;
 
 namespace Loaders
 {
-    public class GameLoader : MonoBehaviour
+    public class LoadManager : MonoBehaviour
     {
-        public static GameLoader Instance;
+        public static LoadManager Instance;
     
         private void Awake()
         {
@@ -21,23 +21,21 @@ namespace Loaders
         
             new MainManager();
             DontDestroyOnLoad(gameObject);
-            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+        
+        public void LoadMainMenuScene()
+        {
+            SceneManager.LoadScene(0);
         }
 
-        private void OnDestroy()
+        public void LoadGameScene()
         {
-            SceneManager.sceneLoaded -= OnSceneLoaded;
+            SceneManager.LoadScene(1);
         }
-
-        private void Start()
+        
+        public void LoadSummaryScene()
         {
-            
-            //SceneManager.LoadScene("MainGameScene");
-        }
-
-        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-        {
-            //Destroy(gameObject);
+            SceneManager.LoadScene(2);
         }
     }
 }
