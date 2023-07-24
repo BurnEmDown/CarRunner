@@ -1,8 +1,246 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8c6aeedd-4861-467a-aee7-c0898263772b" name="Changes" comment="Added 3 more car SO with different stats and colors">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CarRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarRunner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://F:/Repos/Unity2D/CarRunner/Assets/Prefabs/PlayerCarImage.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://F:/Repos/Unity2D/CarRunner/Assets/Prefabs/PlayerCarImage.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://F:/Repos/Unity2D/CarRunner/Assets/Scenes/GameScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://F:/Repos/Unity2D/CarRunner/Assets/Scenes/GameScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://F:/Repos/Unity2D/CarRunner/Assets/Scenes/GameScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://F:/Repos/Unity2D/CarRunner/Assets/Scripts/Player/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://F:/Repos/Unity2D/CarRunner/Assets/Scripts/Player/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://F:/Repos/Unity2D/CarRunner/Assets/Scripts/Player/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://F:/Repos/Unity2D/CarRunner/Assets/Scripts/Player/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://F:/Repos/Unity2D/CarRunner/Assets/Scripts/ScriptableObjects/Car 1.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://F:/Repos/Unity2D/CarRunner/Assets/Scripts/ScriptableObjects/CarSO.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://F:/Repos/Unity2D/CarRunner/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://F:/Repos/Unity2D/CarRunner/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://F:/Repos/Unity2D/CarRunner/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://F:/Repos/Unity2D/CarRunner/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2T1KLrcjlGmVye1KJbsMfJzHJsw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2020.3.25f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath F:\Repos\Unity2D\CarRunner -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="F:\Repos\Unity2D\CarRunner" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1740">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="1740" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c6aeedd-4861-467a-aee7-c0898263772b" name="Changes" comment="" />
+      <created>1690205099201</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690205099201</updated>
+      <workItem from="1690205138707" duration="2518000" />
+      <workItem from="1690208886443" duration="393000" />
+      <workItem from="1690209538050" duration="17000" />
+      <workItem from="1690209608675" duration="57000" />
+      <workItem from="1690209894893" duration="16572000" />
+    </task>
+    <task id="LOCAL-00001" summary="imported TMP stuff">
+      <created>1690205337972</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690205337972</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added main menu scene with &quot;play game&quot; and &quot;quit&quot; button">
+      <created>1690205570290</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690205570290</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added top ui panel to game scene">
+      <created>1690205927762</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690205927762</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added 5 lane road image and a script that makes it scroll down to make the appearance of driving on the road">
+      <created>1690206424620</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690206424620</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added get input from player and raise event via script">
+      <created>1690210945799</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690210945800</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added player movement to each of the 5 lanes by pressed on right or left arrow keys">
+      <created>1690212634181</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690212634181</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added player movement to each of the 5 lanes by pressed on right or left arrow keys">
+      <created>1690212641229</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690212641229</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Moved scroller script to new UI folder and created empty main menu script there">
+      <created>1690212884315</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690212884315</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Split player controller object and player car image object">
+      <created>1690214160499</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1690214160499</updated>
+    </task>
+    <task id="LOCAL-00010" summary="moved check input from update to fixedupdate">
+      <created>1690214202723</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690214202723</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Moved player input from fixedupdate to update">
+      <created>1690230743144</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1690230743144</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added tags for bottom collider (for when enemy cars leave screen)">
+      <created>1690230764467</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1690230764467</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added rigidbody and tag &quot;player&quot; to player car image prefab">
+      <created>1690230810215</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690230810215</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added enemy car script, prefab and SO">
+      <created>1690230845847</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1690230845847</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added several managers: factory, pool, game, main. Added loader, added car spawner script, added top stats UI script">
+      <created>1690230899599</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1690230899599</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added 3 more car SO with different stats and colors">
+      <created>1690231487416</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1690231487416</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="imported TMP stuff" />
+    <MESSAGE value="Added main menu scene with &quot;play game&quot; and &quot;quit&quot; button" />
+    <MESSAGE value="Added top ui panel to game scene" />
+    <MESSAGE value="Added 5 lane road image and a script that makes it scroll down to make the appearance of driving on the road" />
+    <MESSAGE value="Added get input from player and raise event via script" />
+    <MESSAGE value="Added player movement to each of the 5 lanes by pressed on right or left arrow keys" />
+    <MESSAGE value="Moved scroller script to new UI folder and created empty main menu script there" />
+    <MESSAGE value="Split player controller object and player car image object" />
+    <MESSAGE value="moved check input from update to fixedupdate" />
+    <MESSAGE value="Moved player input from fixedupdate to update" />
+    <MESSAGE value="Added tags for bottom collider (for when enemy cars leave screen)" />
+    <MESSAGE value="Added rigidbody and tag &quot;player&quot; to player car image prefab" />
+    <MESSAGE value="Added enemy car script, prefab and SO" />
+    <MESSAGE value="Added several managers: factory, pool, game, main. Added loader, added car spawner script, added top stats UI script" />
+    <MESSAGE value="Added 3 more car SO with different stats and colors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added 3 more car SO with different stats and colors" />
+  </component>
 </project>
