@@ -8,5 +8,6 @@ public class CarSO : ScriptableObject
     public Vector2 size;
     public float speed;
     public Color color;
+    public int scoreGiven;
     public bool canMoveLanes;
 }

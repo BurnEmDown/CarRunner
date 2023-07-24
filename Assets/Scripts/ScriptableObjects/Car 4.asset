@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b7b189cae6cf3d747a7a81326c3fed1d, type: 3}
-  m_Name: Car 1
+  m_Name: Car 4
   m_EditorClassIdentifier: 
-  size: {x: 160, y: 240}
-  speed: 100
-  color: {r: 0.5771357, g: 1, b: 0, a: 0}
-  scoreGiven: 10
+  size: {x: 180, y: 260}
+  speed: 120
+  color: {r: 0, g: 0.2935958, b: 1, a: 0}
+  scoreGiven: 30
   canMoveLanes: 0
