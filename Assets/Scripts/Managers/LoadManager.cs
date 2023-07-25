@@ -17,6 +17,7 @@ namespace Managers
             else
             {
                 Debug.LogError("Tried to create another GameLoader");
+                Destroy(gameObject);
             }
         
             new MainManager();
@@ -25,6 +26,7 @@ namespace Managers
         
         public void LoadMainMenuScene()
         {
+            AudioManager.Instance.PlayMainMenuMusic();
             SceneManager.LoadScene(0);
         }
 
@@ -33,11 +35,15 @@ namespace Managers
             SceneManager.LoadScene(1);
             GameManager.ResetDefaultValues();
             GameManager.SubscribeToGameEvents();
+            AudioManager.Instance.PlayCarDoorOpenSoundEffect();
+            AudioManager.Instance.PlayCarDriveContinuousSoundEffect();
+            AudioManager.Instance.PlayGameMusic();
         }
         
         public void LoadSummaryScene()
         {
             GameManager.UnsubscribeFromGameEvents();
+            AudioManager.Instance.PlayMainMenuMusic();
             SceneManager.LoadScene(2);
         }
 

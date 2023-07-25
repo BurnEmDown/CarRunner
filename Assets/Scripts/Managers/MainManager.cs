@@ -20,6 +20,7 @@ namespace Managers
             else
             {
                 Debug.LogError("Tried to create another Main Manager");
+                return;
             }
         
             factoryManager = new FactoryManager();

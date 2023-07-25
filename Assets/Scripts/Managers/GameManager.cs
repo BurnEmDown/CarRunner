@@ -46,6 +46,11 @@ namespace Managers
             if (lives == 0)
             {
                 LoadManager.Instance.LoadSummaryScene();
+                AudioManager.Instance.PlayCarDestroyedSoundEffect();
+            }
+            else
+            {
+                AudioManager.Instance.PlayCarCrashSoundEffect();
             }
             MainManager.Instance.poolManager.ReturnToPool(nameof(EnemyCar),car);
         }
@@ -62,6 +67,7 @@ namespace Managers
 
         public static void PlayerPassedEnemyCar(EnemyCar car)
         {
+            AudioManager.Instance.PlayCarPassSoundEffect();
             score += car.ScoreGiven;
             topStats.UpdateScoreNum(score);
             carsPassed++;
