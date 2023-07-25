@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Audio;
 
 namespace Managers
@@ -17,7 +18,8 @@ namespace Managers
         [SerializeField] private AudioSource currentActiveContinuousSoundEffect;
     
         [Header("Music")]
-        [SerializeField] private AudioClip soundtrack;
+        [SerializeField] private AudioClip MainMenuMusic;
+        [SerializeField] private AudioClip GameMusic;
         [SerializeField] private AudioSource currentActiveMusic;
         
         [SerializeField] private AudioSource[] allAudioSources;
@@ -36,6 +38,7 @@ namespace Managers
             else
             {
                 Debug.LogError("Tried to create another AudioManager");
+                Destroy(gameObject);
             }
             
             DontDestroyOnLoad(gameObject);
@@ -48,14 +51,25 @@ namespace Managers
             }
         }
 
-        void Start()
+        private void Start()
         {
-            PlaySoundtrack();
+            PlayMainMenuMusic();
         }
 
-        private void PlaySoundtrack()
+        public void PlayMainMenuMusic()
         {
-            //currentActiveMusic.clip = ;
+            if (currentActiveMusic.clip == MainMenuMusic) return;
+            
+            currentActiveMusic.Stop();
+            currentActiveMusic.clip = MainMenuMusic;
+            currentActiveMusic.Play();
+            currentActiveMusic.loop = true;
+        }
+        
+        public void PlayGameMusic()
+        {
+            currentActiveMusic.Stop();
+            currentActiveMusic.clip = GameMusic;
             currentActiveMusic.Play();
             currentActiveMusic.loop = true;
         }
