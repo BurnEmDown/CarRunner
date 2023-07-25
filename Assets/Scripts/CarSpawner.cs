@@ -1,8 +1,10 @@
+using System.Collections.Generic;
 using Managers;
 using UnityEngine;
 
 public class CarSpawner : MonoBehaviour
 {
+    [SerializeField] private List<CarSO> carSOList;
     [SerializeField] private float spawnDelay = 3f;
     private float nextTimeToSpawn = 1f;
 
@@ -31,10 +33,19 @@ public class CarSpawner : MonoBehaviour
         car.transform.SetParent(transform);
         car.transform.localScale = Vector3.one;
         car.transform.localPosition = Vector3.zero;
+        
+        int randomIndex = Random.Range(0, carSOList.Count);
+        CarSO carSO = carSOList[randomIndex];
+        car.SetValues(carSO.size, carSO.color, carSO.speed, carSO.canMoveLanes);
     }
 
     private void DecreaseSpawnTime()
     {
         spawnDelay *= decreaseSpawnTimeFactor;
+    }
+
+    public void AssignCarSOList(List<CarSO> carsSO)
+    {
+        carSOList = carsSO;
     }
 }
