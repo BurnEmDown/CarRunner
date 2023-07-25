@@ -11,10 +11,5 @@ namespace Player
             playerCarImage.SetParent(newPosition);
             playerCarImage.localPosition = Vector3.zero;
         }
-
-        internal void EnableColliderOnPlayerImage()
-        {
-            playerCarImage.GetComponent<BoxCollider2D>().enabled = true;
-        }
     }
 }

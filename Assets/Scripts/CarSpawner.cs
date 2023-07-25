@@ -36,7 +36,7 @@ public class CarSpawner : MonoBehaviour
         
         int randomIndex = Random.Range(0, carSOList.Count);
         CarSO carSO = carSOList[randomIndex];
-        car.SetValues(carSO.size, carSO.color, carSO.speed, carSO.canMoveLanes);
+        car.SetValues(carSO.size, carSO.color, carSO.speed, carSO.canMoveLanes, carSO.scoreGiven);
     }
 
     private void DecreaseSpawnTime()

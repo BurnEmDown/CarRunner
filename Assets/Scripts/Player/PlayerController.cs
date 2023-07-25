@@ -22,10 +22,6 @@ namespace Player
             playerModel.AddAllLocationObjectsFromParentObject(laneParentObject);
             playerMovement = GetComponent<PlayerMovement>();
             
-            // There was an issue which I couldn't find a better fix for where the player would immediately trigger 
-            // collisions with the enemy cars, which trigger game over immediately, so I decided to enable the 
-            // players' collision only 2 seconds after it activates
-            Invoke(nameof(EnableCollider), 2f);
         }
 
         private void OnEnable()
@@ -42,12 +38,6 @@ namespace Player
         private void Update()
         {
             playerInput.CheckInput();
-        }
-
-        private void EnableCollider()
-        {
-            // playerMovement holds reference to playImage so I decided to call the method from it
-            playerMovement.EnableColliderOnPlayerImage();
         }
 
         private void OnRightButtonPressed()
