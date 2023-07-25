@@ -148,6 +148,7 @@ public class EnemyCar : MonoBehaviour
 
     private void UpdateLanePosition()
     {
+        AudioManager.Instance.PlayCarHonkSoundEffect();
         transform.SetParent(possibleLanesPositions[currentLane]);
         transform.localPosition = new Vector3(0, transform.localPosition.y, 0);
     }

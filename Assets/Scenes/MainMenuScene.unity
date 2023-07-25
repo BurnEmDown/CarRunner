@@ -448,6 +448,7 @@ MonoBehaviour:
   CarExplosionSound: {fileID: 8300000, guid: 8c02ea1b8938e0e4f95b3dc2e4c8e2d8, type: 3}
   CarDriveOnRoadSound: {fileID: 8300000, guid: d1dd6c1f7407dd341bbdfcdafe94d9af, type: 3}
   DrivePastCarSound: {fileID: 8300000, guid: 8fcfd75c3be0ca94ea2163e42bae29b2, type: 3}
+  CarHonkSound: {fileID: 8300000, guid: 7137a08bc6616eb47b9d1d13ae960081, type: 3}
   currentActiveSoundEffect: {fileID: 8476249}
   currentActiveContinuousSoundEffect: {fileID: 8476248}
   MainMenuMusic: {fileID: 8300000, guid: 91f278f1d1310df499b6d28cb05a28c8, type: 3}

@@ -14,6 +14,7 @@ namespace Managers
         [SerializeField] private AudioClip CarExplosionSound;
         [SerializeField] private AudioClip CarDriveOnRoadSound;
         [SerializeField] private AudioClip DrivePastCarSound;
+        [SerializeField] private AudioClip CarHonkSound;
         [SerializeField] private AudioSource currentActiveSoundEffect;
         [SerializeField] private AudioSource currentActiveContinuousSoundEffect;
     
@@ -99,6 +100,13 @@ namespace Managers
         {
             currentActiveSoundEffect.Stop();
             currentActiveSoundEffect.clip = CarDoorOpenSound;
+            currentActiveSoundEffect.Play();
+        }
+        
+        public void PlayCarHonkSoundEffect()
+        {
+            currentActiveSoundEffect.Stop();
+            currentActiveSoundEffect.clip = CarHonkSound;
             currentActiveSoundEffect.Play();
         }
 
