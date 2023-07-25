@@ -31,10 +31,13 @@ namespace Managers
         public void LoadGameScene()
         {
             SceneManager.LoadScene(1);
+            GameManager.ResetDefaultValues();
+            GameManager.SubscribeToGameEvents();
         }
         
         public void LoadSummaryScene()
         {
+            GameManager.UnsubscribeFromGameEvents();
             SceneManager.LoadScene(2);
         }
     }

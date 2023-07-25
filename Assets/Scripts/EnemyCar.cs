@@ -1,6 +1,6 @@
-using System;
 using Managers;
 using UnityEngine;
+using EventType = Managers.Events.EventType;
 
 public class EnemyCar : MonoBehaviour
 {
@@ -21,17 +21,16 @@ public class EnemyCar : MonoBehaviour
     {
         rb.MovePosition(rb.position + (downDirection * (speed * Time.deltaTime)));
     }
-    
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("BottomCollider"))
         {
-            GameManager.PlayerPassedEnemyCar(this);
+            MainManager.Instance.eventsManager.InvokeEvent(EventType.EnemyCarPassed, this);
         }
         else if (col.CompareTag("Player"))
         {
-            GameManager.EnemyCarHitPlayer();
+            MainManager.Instance.eventsManager.InvokeEvent(EventType.EnemyCarHitPlayer, this);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Managers.Events;
+using UnityEngine;
 
 namespace Managers
 {
@@ -8,6 +9,7 @@ namespace Managers
     
         public FactoryManager factoryManager;
         public PoolManager poolManager;
+        public EventsManager eventsManager;
     
         public MainManager()
         {
@@ -23,6 +25,7 @@ namespace Managers
             factoryManager = new FactoryManager();
             poolManager = new PoolManager();
             poolManager.InitPool<EnemyCar>(nameof(EnemyCar),10);
+            eventsManager = new EventsManager();
         }
     }
 }

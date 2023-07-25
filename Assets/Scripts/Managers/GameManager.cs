@@ -1,7 +1,6 @@
-using System;
 using UI;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using EventType = Managers.Events.EventType;
 
 namespace Managers
 {
@@ -17,13 +16,47 @@ namespace Managers
         private static int score;
         private static int carsPassed;
 
-        public static void EnemyCarHitPlayer()
+        public static void SubscribeToGameEvents()
+        {
+            UnsubscribeFromGameEvents();
+            MainManager.Instance.eventsManager.AddListener(EventType.EnemyCarPassed, PlayerPassedEnemyCar);
+            MainManager.Instance.eventsManager.AddListener(EventType.EnemyCarHitPlayer, EnemyCarHitPlayer);
+        }
+
+        public static void UnsubscribeFromGameEvents()
+        {
+            MainManager.Instance.eventsManager.RemoveListener(EventType.EnemyCarPassed, PlayerPassedEnemyCar);
+            MainManager.Instance.eventsManager.RemoveListener(EventType.EnemyCarHitPlayer, EnemyCarHitPlayer);
+        }
+
+        private static void EnemyCarHitPlayer(object obj)
+        {
+            if(obj is EnemyCar car)
+                EnemyCarHitPlayer(car);
+            else
+            {
+                Debug.LogError($"Called event with wrong object type {obj}");
+            }
+        }
+
+        public static void EnemyCarHitPlayer(EnemyCar car)
         {
             lives--;
             topStats.UpdateLivesNum(lives);
             if (lives == 0)
             {
                 LoadManager.Instance.LoadSummaryScene();
+            }
+            MainManager.Instance.poolManager.ReturnToPool(nameof(EnemyCar),car);
+        }
+        
+        private static void PlayerPassedEnemyCar(object obj)
+        {
+            if(obj is EnemyCar car)
+                PlayerPassedEnemyCar(car);
+            else
+            {
+                Debug.LogError($"Called event with wrong object type {obj}");
             }
         }
 
@@ -41,6 +74,11 @@ namespace Managers
             lives = startLives;
             score = startScore;
             carsPassed = startCarsPassed;
+        }
+
+        public static void AssignTopStats(TopStats topStatsObject)
+        {
+            topStats = topStatsObject;
         }
     }
 }
