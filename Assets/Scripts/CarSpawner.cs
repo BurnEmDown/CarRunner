@@ -1,23 +1,32 @@
+using System;
 using System.Collections.Generic;
 using Managers;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class CarSpawner : MonoBehaviour
 {
+    [SerializeField] private int laneIndex;
     [SerializeField] private List<CarSO> carSOList;
-    [SerializeField] private float spawnDelay = 3f;
-    private float nextTimeToSpawn = 1f;
+    [SerializeField] private float minSpawnDelay = 5f;
+    [SerializeField] private float maxSpawnDelay = 15f;
+    [SerializeField] private float nextTimeToSpawn;
 
     private float decreaseSpawnTimeDelay = 5f;
     private float nextTimeToDecreaseSpawnTime = 5f;
     private float decreaseSpawnTimeFactor = 0.9f;
+
+    private void Start()
+    {
+        nextTimeToSpawn = Random.Range(minSpawnDelay, maxSpawnDelay);
+    }
 
     private void Update()
     {
         if (nextTimeToSpawn <= Time.time)
         {
             SpawnCar();
-            nextTimeToSpawn = Time.time + spawnDelay;
+            nextTimeToSpawn = Time.time + Random.Range(minSpawnDelay, maxSpawnDelay);
         }
 
         if (nextTimeToDecreaseSpawnTime <= Time.time)
@@ -36,12 +45,14 @@ public class CarSpawner : MonoBehaviour
         
         int randomIndex = Random.Range(0, carSOList.Count);
         CarSO carSO = carSOList[randomIndex];
-        car.SetValues(carSO.size, carSO.color, carSO.speed, carSO.canMoveLanes, carSO.scoreGiven);
+        car.SetValues(carSO.size, carSO.color, carSO.speed, carSO.canMoveLanes, carSO.scoreGiven, laneIndex);
+        car.AddAllLocationFromLanesParentObject(transform.parent.gameObject);
     }
 
     private void DecreaseSpawnTime()
     {
-        spawnDelay *= decreaseSpawnTimeFactor;
+        minSpawnDelay *= decreaseSpawnTimeFactor;
+        maxSpawnDelay *= decreaseSpawnTimeFactor;
     }
 
     public void AssignCarSOList(List<CarSO> carsSO)

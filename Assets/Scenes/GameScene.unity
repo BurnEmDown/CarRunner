@@ -181,6 +181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 77838439}
+  - component: {fileID: 77838440}
   m_Layer: 5
   m_Name: Lane5
   m_TagString: Untagged
@@ -207,6 +208,23 @@ RectTransform:
   m_AnchoredPosition: {x: 730, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &77838440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77838438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a52c150bafdeee4c9f537b654766756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laneIndex: 4
+  carSOList: []
+  minSpawnDelay: 5
+  maxSpawnDelay: 15
+  nextTimeToSpawn: 0
 --- !u!1 &187243909
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,6 +962,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 555379048}
+  - component: {fileID: 555379049}
   m_Layer: 5
   m_Name: Lane4
   m_TagString: Untagged
@@ -970,6 +989,23 @@ RectTransform:
   m_AnchoredPosition: {x: 300, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &555379049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555379047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a52c150bafdeee4c9f537b654766756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laneIndex: 3
+  carSOList: []
+  minSpawnDelay: 5
+  maxSpawnDelay: 15
+  nextTimeToSpawn: 0
 --- !u!1 &767909130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1303,6 +1339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1009931855}
+  - component: {fileID: 1009931856}
   m_Layer: 5
   m_Name: Lane2
   m_TagString: Untagged
@@ -1329,6 +1366,23 @@ RectTransform:
   m_AnchoredPosition: {x: -460, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1009931856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009931854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a52c150bafdeee4c9f537b654766756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laneIndex: 1
+  carSOList: []
+  minSpawnDelay: 5
+  maxSpawnDelay: 15
+  nextTimeToSpawn: 0
 --- !u!1 &1176094872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1788,8 +1842,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a52c150bafdeee4c9f537b654766756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  laneIndex: 0
   carSOList: []
-  spawnDelay: 3
+  minSpawnDelay: 5
+  maxSpawnDelay: 15
+  nextTimeToSpawn: 0
 --- !u!1 &1973454710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1970,6 +2027,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2008597317}
+  - component: {fileID: 2008597318}
   m_Layer: 5
   m_Name: Lane3
   m_TagString: Untagged
@@ -1996,6 +2054,23 @@ RectTransform:
   m_AnchoredPosition: {x: -80, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2008597318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008597316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a52c150bafdeee4c9f537b654766756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laneIndex: 2
+  carSOList: []
+  minSpawnDelay: 5
+  maxSpawnDelay: 15
+  nextTimeToSpawn: 0
 --- !u!1 &2033856773
 GameObject:
   m_ObjectHideFlags: 0

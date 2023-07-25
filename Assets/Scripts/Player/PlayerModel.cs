@@ -42,6 +42,7 @@ namespace Player
             locationIndex++;
             if (locationIndex > playerLocationTransforms.Length - 1)
             {
+                locationIndex = playerLocationTransforms.Length - 1;
                 Debug.LogError("Tried to move too much to the right");
                 return null;
             }
@@ -53,6 +54,7 @@ namespace Player
             locationIndex--;
             if (locationIndex < 0)
             {
+                locationIndex = 0;
                 Debug.LogError("Tried to move too much to the left");
                 return null;
             }
