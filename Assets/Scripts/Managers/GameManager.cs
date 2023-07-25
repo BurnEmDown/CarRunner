@@ -80,6 +80,16 @@ namespace Managers
         {
             topStats = topStatsObject;
         }
+
+        public static int GetScore()
+        {
+            return score;
+        }
+
+        public static int GetCarsPassed()
+        {
+            return carsPassed;
+        }
     }
 }
 

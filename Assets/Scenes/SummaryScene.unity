@@ -1562,6 +1562,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenuButton: {fileID: 1057003999}
+  scoreText: {fileID: 1109373499}
+  carsPassedText: {fileID: 528578037}
 --- !u!4 &2064182364
 Transform:
   m_ObjectHideFlags: 0
