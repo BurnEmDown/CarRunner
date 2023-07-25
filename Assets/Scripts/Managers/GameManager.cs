@@ -85,6 +85,14 @@ namespace Managers
         public static void AssignTopStats(TopStats topStatsObject)
         {
             topStats = topStatsObject;
+            UpdateAllStatsNums();
+        }
+
+        private static void UpdateAllStatsNums()
+        {
+            topStats.UpdateLivesNum(lives);
+            topStats.UpdateScoreNum(score);
+            topStats.UpdateCarsNum(carsPassed);
         }
 
         public static int GetScore()
