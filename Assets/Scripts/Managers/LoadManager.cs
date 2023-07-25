@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Loaders
+namespace Managers
 {
     public class LoadManager : MonoBehaviour
     {
