@@ -40,6 +40,11 @@ namespace Managers
             GameManager.UnsubscribeFromGameEvents();
             SceneManager.LoadScene(2);
         }
+
+        public void QuitGame()
+        {
+            Application.Quit();
+        }
     }
 }
 
