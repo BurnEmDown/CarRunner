@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   size: {x: 120, y: 200}
   speed: 140
-  color: {r: 1, g: 0, b: 0.03235817, a: 0}
+  color: {r: 1, g: 0, b: 0.03235817, a: 1}
   scoreGiven: 50
   canMoveLanes: 0
